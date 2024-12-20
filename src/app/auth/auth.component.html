@@ -1,0 +1,14 @@
+<div style="text-align: center; margin-top: 50px;">
+    <h2>Iniciar Sesión</h2>
+    <form (submit)="onSubmit()">
+      <label for="codigo">Código de Alumno:</label>
+      <input type="text" id="codigo" #codigoInput required />
+      <br /><br />
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" #passwordInput required />
+      <br /><br />
+      <button type="submit">Ingresar</button>
+    </form>
+    <p *ngIf="error" style="color: red;">{{ error }}</p>
+  </div>
+  
